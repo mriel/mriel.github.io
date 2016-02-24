@@ -35,7 +35,7 @@
   padding: 1rem; }
 
 .actionBanner {
-  background: url("../img/desk.jpg"), linear-gradient(to right, #F44336, #04A748), linear-gradient(to right, #1D61A7, #6E1DA7), linear-gradient(to right, #1d1d1d, #E2F64F);
+  background: url("../img/desk.JPG"), linear-gradient(to right, #F44336, #04A748), linear-gradient(to right, #1D61A7, #6E1DA7), linear-gradient(to right, #1d1d1d, #E2F64F);
   background-position: 0px 490px;
   background-size: cover;
   background-size: 100%;
