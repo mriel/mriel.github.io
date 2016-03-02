@@ -3,13 +3,15 @@ layout: default
 title: Matt Riel Designer
 ---
       <div class="sections">
-            {% for post in site.posts limit:1 %}
-                  <a href="{{ post.url }}">
-                      <h3>{{ post.title }}</h3>
-                      <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
-                      <div>{{ post.content |truncatehtml | truncatewords: 60 }}</div>
-                  </a>
-            {% endfor %}
+            <ul class="posts">  
+            	{% for post in site.posts limit:20 %}  
+            	   <li>  
+            		   <span>{{ post.date | date_to_string }}</span> &raquo;  
+            		   <a href="{{ BASE_PATH }}{{ post.url }}">  
+            		   {{ post.title }}</a>  
+            	   </li>  
+            	{% endfor %}  
+            </ul>
       </div>
       <div class="sections">
         <div class="row contentHeader">
