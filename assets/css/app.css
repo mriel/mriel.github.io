@@ -3,7 +3,9 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
 * {
   text-rendering: optimizeLegibility; }
-
+li{
+  list-style-type:none;
+}
 .simplenav {
   border-bottom: 1px solid #e6e6e6; }
 
