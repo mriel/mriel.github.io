@@ -3,9 +3,12 @@ layout: default
 title: Matt Riel Designer
 ---
       <div class="sections">
-            {% assign post = site.posts.first %}
-            {% assign content = post.content %}
-            {% include post_detail.html %}
+            <div class="row">
+                  <div class="column">
+                  {% assign post = site.posts.first %}
+                  {% assign content = post.content %}
+                  </div>
+            </div>
       </div>
       <div class="sections">
         <div class="row contentHeader">
