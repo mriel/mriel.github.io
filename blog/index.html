@@ -2,12 +2,12 @@
 layout: blog
 title: Between the Panels
 ---
-<div class="row">
+<div class="row" style="padding-top:50px;">
   <div class="column">
     	<ul class="posts">
     
     	  {% for post in site.posts %}
-    	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br>
+    	    <li><h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3><br><span>{{ post.date | date_to_string }}</span> <br>
     	    {{ post.excerpt }}
     	    </li>
     	  {% endfor %}
