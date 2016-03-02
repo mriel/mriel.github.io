@@ -5,8 +5,13 @@ title: Matt Riel Designer
       <div class="sections">
             <div class="row">
                   <div class="column">
-                  {% assign post = site.posts.first %}
-                  {% assign content = post.content %}
+                  <ul>
+                    {% for post in site.posts %}
+                      <li>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
                   </div>
             </div>
       </div>
