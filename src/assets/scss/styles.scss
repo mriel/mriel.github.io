@@ -1,0 +1,140 @@
+*{
+  text-rendering: optimizeLegibility;
+}
+li{
+  list-style-type:none;
+}
+//simple nav
+.simplenav{
+  border-bottom:1px solid #e6e6e6;
+}
+//logo
+#logo{
+  width:rem-calc(92);
+  padding:$global-padding;
+}
+//Top Banner
+.actionBanner{
+  background:$primary-color;
+  background: linear-gradient(rgba(244,67,54, 0.75),rgba(244,67,54, 0.75)),
+                  url("../img/desk.jpg") no-repeat center;
+  // background:url("../img/desk.jpg"),
+  //   -webkit-linear-gradient(left, $primary-color, #04A748),
+  //   -webkit-linear-gradient(left, #1D61A7, #6E1DA7),
+  //   -webkit-linear-gradient(left, $black, #E2F64F);
+  // background:url("../img/desk.jpg"),
+  //   -moz-linear-gradient(right, $primary-color, #04A748),
+  //   -moz-linear-gradient(right, #1D61A7, #6E1DA7),
+  //   -moz-linear-gradient(right, $black, #E2F64F);
+  // background:
+  // url("../img/desk.jpg"),
+  // linear-gradient(to right, $primary-color, #04A748),
+  // linear-gradient(to right, #1D61A7, #6E1DA7),
+  // linear-gradient(to right, $black, #E2F64F),
+  // linear-gradient(to right, $primary-color, rgba(255,255,255,0.1););
+  // background-position:0px 490px;
+  background-size:cover;
+  color:$white;
+}
+.insideBanner{
+  margin: 0px auto;
+  max-width: rem-calc(350);
+  line-height: 1;
+  padding: rem-calc(30 0);
+}
+.mainBannerHeader{
+  font-size: rem-calc(48);
+  font-family: $header-font-family;
+  padding-top:rem-calc(10);
+}
+// Blog Header
+.blogBannerHeader a{
+  color:$white;
+}
+//Typed.js text in Top Banner
+.typedCustom{
+  font-size: rem-calc(32);
+  font-weight: normal;
+  font-family:$body-font-family;
+  text-align: left;
+}
+// Blinking Cursor for Typed.JS
+.typed-cursor{
+    opacity: 1;
+    color:yellow;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+//sections
+.sections{
+  padding-top:rem-calc(50);
+  padding-bottom:rem-calc(50);
+}
+//Work
+.contentHeader{
+  padding-top:$global-padding;
+  padding-bottom:$global-padding;
+  text-align: center;
+}
+#work{
+  width:rem-calc(72);
+  vertical-align: bottom;
+}
+
+//Portfolio
+.portThumb{
+  border:1px solid  #e6e6e6;
+  padding:0px;
+  margin-bottom:1rem;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.10);
+}
+.imgThumb{
+  width:100%;
+  border-bottom:1px solid #e6e6e6;
+}
+.portHeading{
+  padding-top:0.25rem;
+  padding-left:$global-padding;
+}
+.portJob{
+  font-weight: bold;
+  color:$primary-color;
+}
+.portText{
+  padding-left:$global-padding;
+  padding-right:$global-padding;
+}
+
+//Skills
+#skills{
+  width:rem-calc(92);
+  vertical-align: bottom;
+}
+.skillsLanguages{
+  border-left:3px solid $primary-color;
+}
+.skillsPrograms{
+  border-left:3px solid $secondary-color;
+}
+.skillsCMS{
+  border-left:3px solid $success-color;
+}
+.skillsKnowledge{
+  border-left:3px solid $warning-color;
+}
